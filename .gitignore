@@ -1,1 +1,5 @@
 /vars/personal_vars.py
+debug.log
+futures.xlsx
+__pycache__*
+*.ipynb

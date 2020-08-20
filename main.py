@@ -13,6 +13,7 @@
 # *
 # * Date        Author      Ref    Revision (Date in YYYYMMDD format) 
 # * 20200718    plee         1     Created bulk code 
+# * 20200816    plee         2     Update SQL database, fixed bugs
 # *
 #########################################################################
 
@@ -36,11 +37,12 @@ def main():
 
     ### INITIALIZE JOURNAL OBJECT ###
     journal = JOURNAL_SQL(data)
-    # clean TDA orders
-    clean_orders = journal.clean_tda_orders()
+    # process TDA orders
+    tda_orders = journal.tda_orders()
 
     ### SQL ###
-    journal.write_sql()
+    # write to TD Ameritrade
+    journal.write_tda_sql()
 
 if __name__ == '__main__':
     main()

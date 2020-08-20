@@ -40,6 +40,12 @@ class AUTHORIZATION():
 
         # submit
         browser.find_by_id('accept').first.click()
+
+        # yes trust this device
+        browser.find_by_id('stepup_trustthisdevice0').find_by_tag('div')[0].find_by_tag('label').first.click()
+        # click save
+        browser.find_by_id('accept').first.click()
+
         # submit again
         browser.find_by_id('accept').first.click()
 
