@@ -1,5 +1,6 @@
 /vars/personal_vars.py
 debug.log
-futures.xlsx
+/data/futures.xlsx
+/data/robinhood_data.csv
 __pycache__*
 *.ipynb

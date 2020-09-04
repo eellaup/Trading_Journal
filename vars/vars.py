@@ -45,3 +45,6 @@ executable_path = {'executable_path':r'C:\Program Files (x86)\chromeDriver\chrom
 ############ SQL Engine ###################################
 sql_url = 'mysql://{}:{}@localhost:3306/trading'.format(sql_user,sql_pass)
 sql_engine = sql.create_engine(sql_url)
+
+############ Robinhood CSV filename ###################################
+rh_filename = 'data/robinhood_data.csv'
