@@ -26,11 +26,11 @@ class AUTHORIZATION():
 
         # fill out element on the form
         browser.find_by_id("username0").first.fill(username)
-        browser.find_by_id("password").first.fill(password)
+        browser.find_by_id("password1").first.fill(password)
         browser.find_by_id('accept').first.click()
 
         # Move to security questions
-        browser.find_by_tag("details").first.click()
+        browser.find_by_tag('main').find_by_tag('details').find_by_tag('summary').first.click()
         browser.find_by_name('init_secretquestion').first.click()
 
         # Find the question on the page
